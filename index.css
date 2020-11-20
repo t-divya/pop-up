@@ -1,0 +1,58 @@
+body{
+    background-color: black;
+}
+
+
+.display{
+    text-align: center;
+    margin-top:20%;    
+}
+
+#btn{
+    align-content: center;
+    padding: 35px;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: rgb(107, 30, 30);
+    border-style: dotted;
+    cursor: pointer;
+}
+
+
+.popUp{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left:20%;
+    top: 20%;
+   width: 55%;
+   height: 33%;
+  overflow:auto;
+    background-color:rgb(240, 240, 14);
+    text-align:center;
+    /* display: none; */
+    padding: 20px;
+    text-align: center;
+
+}
+
+#popUpClose{
+    padding: 10px;;
+    background-color: thistle;
+    float: right;
+    cursor: pointer;
+}
+
+.content{
+    margin:10% auto;
+    border: 2px solid tomato;
+    width: 78%;
+    background-color: tomato;
+    padding:20px;
+    animation-name: animatetop;
+    animation-duration: 5s;
+}
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+  }
